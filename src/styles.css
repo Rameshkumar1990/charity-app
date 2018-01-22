@@ -1,10 +1,13 @@
 /* You can add global styles to this file, and" also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
+@import "assets/css/riliwan-rabo.css";
+@import "assets/css/form.css";
 /* ============================================================================= Base ========================================================================== */
 body {
     font-family: "Open sans", sans-serif;
     color: #115c9b;
+    background-color: #f9f9f9;
 }
 h1, h2, h3, h4 {
     font-family: "Dosis", sans-serif;
@@ -101,6 +104,118 @@ a:hover, a:focus, a:active {
 .navbar-main .icon-bar {
     background: #fff;
 }
+/* Login and Sign up ================================= */
+.password-reset-wrapper, .login-wrapper{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.password-reset-wrapper .password-reset-header h1, .login-wrapper .login-form-header h1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.password-reset-wrapper .password-reset-body, .login-wrapper .login-form-body{
+    border: 1px solid #d8dee2;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 14px;
+}
+.password-reset-wrapper .password-reset-body .btn-password-reset, .login-wrapper .login-form-body .btn-signin, .login-wrapper .login-form-body .label-password{
+    width: 100%;
+}
+.login-wrapper .login-form-body .label-link{
+    float: right !important;
+    font-size: 12px;
+    text-decoration: none;
+}
+.login-wrapper .create-account-link{
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #d8dee2;
+    text-align: center;
+    color: #777;
+}
+.signup-wrapper .signup-main .disclosure a, .login-wrapper .create-account-link a{
+    color: #0366d6;
+}
+.signup-wrapper{
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.signup-wrapper .signup-main .disclosure{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    margin: 15px 0;
+    color: #777;
+}
+.signup-wrapper .signup-main h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.btn-default {
+    border-color: #ccc;
+}
+
+.tab-content .choice {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 38px;
+}
+
+.tab-content .choice i {
+    font-size: 32px;
+    line-height: 55px;
+}
+
+.btn-radio {
+	width: 100%;
+}
+.img-radio {
+	opacity: 0.8;
+	margin-bottom: 5px;
+}
+
+.space-20 {
+    margin-top: 20px;
+}
+
+/* active buttons */
+#status-buttons a.active span.round-tabs { 
+    background: rgb(34, 194, 34); 
+    color: #fff;
+    border: 2px solid rgb(34, 194, 34);
+}
+
+#status-buttons span.round-tabs { 
+    background: #fff; 
+    color: #d3d3d3;
+    border: 2px solid #d3d3d3;
+}
+
+.iradio_buttons {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: #febe29 no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.iradio_buttons {
+    background-position: -120px 0;
+}
+.iradio_buttons.hover {
+    background-position: -144px 0;
+}
+.iradio_buttons.checked {
+    background-position: -168px 0;
+}
 /* ============================================================================= Responsive ========================================================================== */
 /* Large devices (large desktops, 1200px and Down) */
 @media (max-width: 1200px) {
@@ -193,6 +308,11 @@ a:hover, a:focus, a:active {
    .sign-in-menu {
         float: left !important;
    }
+   .signup-wrapper{
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
