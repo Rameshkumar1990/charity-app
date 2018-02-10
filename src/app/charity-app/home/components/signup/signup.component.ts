@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
 import { SignupDataService } from '../../service/signup-data.service';
 
 @Component({
@@ -8,11 +7,40 @@ import { SignupDataService } from '../../service/signup-data.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  @Input()
   private formData;
-  constructor(private signupDataService:SignupDataService) { }
+  private activeTab: String = 'user';
+  private completedForms: String[] = [];
+  private userCredentialsVisibility: boolean = true;
+  private personalVisibility: boolean = false;
+  private workVisibility: boolean = false;
+
+
+  constructor(private signupDataService: SignupDataService) { }
 
   ngOnInit() {
     this.formData = this.signupDataService.getFormData();
+    this.signupDataService.resetFormData();
+  }
+
+  showForms(event) {
+    if (this.completedForms.indexOf(event.completed) == -1) {
+      this.completedForms.push(event.completed);
+    }
+    if (event.show == 'user') {
+      this.userCredentialsVisibility = true;
+      this.personalVisibility = false;
+      this.workVisibility = false;
+      this.activeTab = 'user';
+    } else if (event.show == 'personal') {
+      this.userCredentialsVisibility = false;
+      this.personalVisibility = true;
+      this.workVisibility = false;
+      this.activeTab = 'personal';
+    } else if (event.show == 'work') {
+      this.userCredentialsVisibility = false;
+      this.personalVisibility = false;
+      this.workVisibility = true;
+      this.activeTab = 'work';
+    }
   }
 }

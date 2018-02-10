@@ -15,14 +15,7 @@ export const ROUTES: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'login', component: LoginComponent },
     { path: 'password_reset', component: PasswordResetComponent },
-    {
-        path: 'join', component: SignupComponent, children:
-            [
-                { path: '', component: PersonalComponent },
-                { path: 'personal', component: PersonalComponent },
-                { path: 'work', component: WorkComponent }
-            ]
-    }
+    { path: 'join', component: SignupComponent }
 ]
 
 export const CHARITY_APP_ROUTES = RouterModule.forRoot(ROUTES)

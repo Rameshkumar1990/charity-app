@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './components/home.component';
@@ -11,7 +10,8 @@ import { SignupNavbarComponent } from './components/signup/signup-navbar/signup-
 
 import { SignupDataService } from './service/signup-data.service';
 import { PersonalComponent } from './components/signup/personal/personal.component';
-import { WorkComponent } from './components/signup/work/work.component'
+import { WorkComponent } from './components/signup/work/work.component';
+import { UserCredentialsComponent } from './components/signup/user-credentials/user-credentials.component';
 
 @NgModule({
     declarations: [
@@ -21,11 +21,11 @@ import { WorkComponent } from './components/signup/work/work.component'
         PasswordResetComponent,
         SignupNavbarComponent,
         PersonalComponent,
-        WorkComponent
+        WorkComponent,
+        UserCredentialsComponent
     ],
     imports: [
         CommonModule,
-        RouterModule,
         FormsModule
     ],
     providers: [

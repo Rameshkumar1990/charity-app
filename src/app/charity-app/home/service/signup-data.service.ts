@@ -1,14 +1,24 @@
 import { Injectable } from '@angular/core';
 
-import { SignupFormData, Personal, Address } from './signup.model';
+import { SignupFormData, Personal, Address, UserCredentials } from './signup.model';
 
 @Injectable()
 export class SignupDataService {
 
     private signupFormData: SignupFormData = new SignupFormData();
+    private isUserCredentialsFormValid: boolean = false;
     private isPersonalFormValid: boolean = false;
     private isWorkFormValid: boolean = false;
     private isAddressFormValid: boolean = false;
+
+    getUserCredentials(): UserCredentials {
+        return this.signupFormData.userCredentials;
+    }
+
+    setUserCredentials(userCredentials: UserCredentials) {
+        this.isUserCredentialsFormValid = true;
+        this.signupFormData.userCredentials = userCredentials;
+    }
 
     getPersonal(): Personal {
         // Return the Personal data
@@ -67,13 +77,14 @@ export class SignupDataService {
     resetFormData(): SignupFormData {
         // Return the form data after all this.* members had been reset
         this.signupFormData.clear();
-        this.isPersonalFormValid = this.isWorkFormValid = this.isAddressFormValid = false;
+        this.isUserCredentialsFormValid = this.isPersonalFormValid = this.isWorkFormValid = this.isAddressFormValid = false;
         return this.signupFormData;
     }
 
     isFormValid() {
         // Return true if all forms had been validated successfully; otherwise, return false
-        return this.isPersonalFormValid &&
+        return this.isUserCredentialsFormValid &&
+            this.isPersonalFormValid &&
             this.isWorkFormValid &&
             this.isAddressFormValid;
     }

@@ -143,7 +143,6 @@ a:hover, a:focus, a:active {
 .signup-wrapper{
     width: 450px;
     margin: 0 auto;
-    margin-top: 100px;
 }
 .signup-wrapper .signup-main .disclosure{
     border-top: 1px solid #ccc;
@@ -184,10 +183,16 @@ a:hover, a:focus, a:active {
 }
 
 /* active buttons */
-#status-buttons a.active span.round-tabs { 
+#status-buttons a.complete span.round-tabs { 
     background: rgb(34, 194, 34); 
     color: #fff;
     border: 2px solid rgb(34, 194, 34);
+}
+
+#status-buttons a.active span.round-tabs { 
+    background: #66afe9; 
+    color: #fff;
+    border: 2px solid #66afe9;
 }
 
 #status-buttons span.round-tabs { 
@@ -311,8 +316,7 @@ a:hover, a:focus, a:active {
    .signup-wrapper{
     width: 350px;
     margin: 0 auto;
-    margin-top: 100px;
-}
+    }
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {

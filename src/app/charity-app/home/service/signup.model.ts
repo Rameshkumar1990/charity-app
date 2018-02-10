@@ -1,14 +1,26 @@
 export class SignupFormData {
+    private _userCredentials: UserCredentials = new UserCredentials();
+
     firstName: string = '';
     lastName : string = '';
-    email: string = '';
+    email:string = '';
     work: string = '';
     street: string = '';
     city: string = '';
     state: string = '';
     zip: string = '';
 
+    get userCredentials(): UserCredentials{
+        return this._userCredentials;
+    }
+
+    set userCredentials(userCredentials:UserCredentials){
+        this._userCredentials = userCredentials;
+    }
+
     clear() {
+       this.userCredentials.clear();
+
         this.firstName = '';
         this.lastName = '';
         this.email = '';
@@ -17,6 +29,18 @@ export class SignupFormData {
         this.city = '';
         this.state = '';
         this.zip = '';
+    }
+}
+
+export class UserCredentials {
+    private userName: string = '';
+    private email: string = '';
+    private password: string = '';
+
+    clear(){
+        this.userName = '';
+        this.email = '';
+        this.password = '';
     }
 }
 

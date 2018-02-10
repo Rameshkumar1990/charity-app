@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'signup-navbar',
@@ -6,8 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup-navbar.component.css']
 })
 export class SignupNavbarComponent implements OnInit {
+  @Input()
+  private activeTab;
+  @Input()
+  private completedForms: String[];
   constructor() { }
 
   ngOnInit() {
+    console.log(this.activeTab);
+  }
+
+  addActive(tabName): boolean {
+    if (this.activeTab == tabName) {
+      return true;
+    }
+    return false;
+  }
+
+  addComplete(tabName): boolean {
+    if (this.completedForms.indexOf(tabName) > -1) {
+      return true;
+    }
+    return false;
   }
 }

@@ -4,34 +4,34 @@
 
     <!-- circular user icon -->
     <li>
-      <a routerLink="/join/personal" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" data-toggle="tab" title="personal">
+      <a data-toggle="tab" title="user" [ngClass]="{'active': addActive('user'), 'complete': addComplete('user')}">
         <span class="round-tabs one">
-          <i class="glyphicon glyphicon-user"></i>
+          <i class="glyphicon glyphicon-lock"></i>
         </span>
       </a>
     </li>
 
     <!-- circular tasks icon -->
     <li>
-      <a routerLink="/join/work" routerLinkActive="active" data-toggle="tab" title="work">
+      <a data-toggle="tab" title="personal" [ngClass]="{'active': addActive('personal'), 'complete': addComplete('personal')}">
         <span class="round-tabs two">
-          <i class="glyphicon glyphicon-tasks"></i>
+          <i class="glyphicon glyphicon-user"></i>
         </span>
       </a>
     </li>
 
     <!-- circular home icon -->
     <li>
-      <a routerLink="join/address" routerLinkActive="active" data-toggle="tab" title="address">
+      <a data-toggle="tab" title="work" [ngClass]="{'active': addActive('work'), 'complete': addComplete('work')}">
         <span class="round-tabs three">
-          <i class="glyphicon glyphicon-home"></i>
+          <i class="glyphicon glyphicon-tasks"></i>
         </span>
       </a>
     </li>
 
     <!-- circular ok icon -->
     <li>
-      <a routerLink="/join/result" routerLinkActive="active" data-toggle="tab" title="completed">
+      <a data-toggle="tab" title="completed">
         <span class="round-tabs four">
           <i class="glyphicon glyphicon-ok"></i>
         </span>

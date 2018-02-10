@@ -1,46 +1,48 @@
 import { Component, OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core'
 import { Router } from '@angular/router';
 import { SignupDataService } from '../../../service/signup-data.service';
 
 @Component({
-  selector: 'app-work',
-  templateUrl: './work.component.html',
-  styleUrls: ['./work.component.css']
+    selector: 'signup-work',
+    templateUrl: './work.component.html',
+    styleUrls: ['./work.component.css']
 })
 export class WorkComponent implements OnInit {
 
-  private title = 'What do you do?';
-  private workType: string;
-  private form: any;
-  
-  constructor(private router: Router, private signupDataService: SignupDataService) {
-  }
+    private title = 'What do you do?';
+    private workType: string;
+    private form: any;
+    @Output()
+    private workCompleted: EventEmitter<any> = new EventEmitter<any>();
 
-  ngOnInit() {
-      this.workType = this.signupDataService.getWork();
-      console.log('Work feature loaded!');
-  }
+    constructor(private router: Router, private signupDataService: SignupDataService) {
+    }
 
-  save(form: any): boolean {
-      if (!form.valid) {
-          return false;
-      }
-      
-      this.signupDataService.setWork(this.workType);
-      return true;
-  }
+    ngOnInit() {
+        this.workType = this.signupDataService.getWork();
+        console.log('Work feature loaded!');
+    }
 
-  goToPrevious(form: any) {
-      if (this.save(form)) {
-          // Navigate to the personal page
-          this.router.navigate(['/join/personal']);
-      }
-  }
+    save(form: any): boolean {
+        if (!form.valid) {
+            return false;
+        }
 
-  goToNext(form: any) {
-      if (this.save(form)) {
-          // Navigate to the address page
-          this.router.navigate(['/join/address']);
-      }
-  }
+        this.signupDataService.setWork(this.workType);
+        return true;
+    }
+
+    goToPrevious(form: any) {
+        if (this.save(form)) {
+            this.workCompleted.emit({'completed':'work','show':'personal'});
+        }
+    }
+
+    goToNext(form: any) {
+        if (this.save(form)) {
+            // Navigate to the address page
+            this.router.navigate(['/join/address']);
+        }
+    }
 }
