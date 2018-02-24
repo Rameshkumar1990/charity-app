@@ -13,7 +13,7 @@
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav pull-right header-menu">
                 <li>
                     <a routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">HOME</a>
                 </li>
@@ -22,7 +22,7 @@
                 </li>
                 <li routerLinkActive="is-active" class="has-child">
                     <a href="#">CAUSES</a>
-                    <ul class="submenu">
+                    <ul class="submenu" *ngIf="false">
                         <li class="submenu-item">
                             <a href="#">Causes list </a>
                         </li>
@@ -37,14 +37,14 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li *ngIf="false">
                     <a routerLinkActive="is-active" href="#">GALLERY</a>
                 </li>
                 <li>
                     <a routerLinkActive="is-active" routerLink="/contact">CONTACT</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav pull-right sign-in-menu">
+            <ul class="nav navbar-nav pull-right header-menu" *ngIf="false">
                 <li>
                     <a routerLinkActive="is-active" routerLink="/login">Sign In</a>
                 </li>
