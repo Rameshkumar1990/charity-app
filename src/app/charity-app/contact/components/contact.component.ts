@@ -4,4 +4,7 @@ import { Component } from '@angular/core';
     selector: 'contact',
     templateUrl: './contact.component.html'
 })
-export class ContactComponent { }
+export class ContactComponent { 
+    private pageTitle:String = 'Wish to give hope?';
+    private pageDescription:String = 'Here are few ways to get in touch with us';
+}

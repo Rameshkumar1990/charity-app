@@ -17,11 +17,8 @@
                 <li>
                     <a routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">HOME</a>
                 </li>
-                <li>
-                    <a routerLinkActive="is-active" routerLink="/about">ABOUT</a>
-                </li>
                 <li routerLinkActive="is-active" class="has-child">
-                    <a href="#">CAUSES</a>
+                    <a routerLinkActive="is-active" routerLink="/causes">CAUSES</a>
                     <ul class="submenu" *ngIf="false">
                         <li class="submenu-item">
                             <a href="#">Causes list </a>
@@ -39,6 +36,9 @@
                 </li>
                 <li *ngIf="false">
                     <a routerLinkActive="is-active" href="#">GALLERY</a>
+                </li>
+                <li>
+                    <a routerLinkActive="is-active" routerLink="/about">ABOUT</a>
                 </li>
                 <li>
                     <a routerLinkActive="is-active" routerLink="/contact">CONTACT</a>

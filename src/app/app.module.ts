@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 
 import { AppCommonModule } from './charity-app/app-common/app-common.module';
 import { HomeModule } from './charity-app/home/home.module';
+import { CausesModule } from './charity-app/causes/causes.module';
 import { AboutModule } from './charity-app/about/about.module'
 import { ContactModule } from './charity-app/contact/contact.module';
 
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppCommonModule,
     HomeModule,
+    CausesModule,
     AboutModule,
     ContactModule
   ],
