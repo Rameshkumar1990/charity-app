@@ -3,6 +3,8 @@
 @import "~font-awesome/css/font-awesome.min.css";
 @import "assets/css/riliwan-rabo.css";
 @import "assets/css/form.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,700);
 /* ============================================================================= Base ========================================================================== */
 body {
     font-family: "Open sans", sans-serif;

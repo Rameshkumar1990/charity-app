@@ -9,7 +9,7 @@ declare var $: any;
 export class HomeComponent implements OnInit, OnDestroy {
     
     ngOnInit() {
-        $('.parallax-window-1').parallax({imageSrc: 'assets/images/parallax/parallax_1.jpg'});
+        $('.parallax-window-1').parallax({imageSrc: 'assets/images/parallax/parallax_5.jpg'});
         $('.parallax-window-2').parallax({imageSrc: 'assets/images/parallax/parallax_3.jpg'});
         $('.parallax-window-3').parallax({imageSrc: 'assets/images/parallax/parallax_4.jpg'});
     }
