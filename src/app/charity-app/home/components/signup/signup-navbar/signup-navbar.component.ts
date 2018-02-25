@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SignupNavbarComponent implements OnInit {
   @Input()
-  private activeTab;
+  activeTab;
   @Input()
-  private completedForms: String[];
+  completedForms: String[];
   constructor() { }
 
   ngOnInit() {

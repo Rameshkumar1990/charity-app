@@ -12,11 +12,11 @@ import { SignupDataService } from '../../../service/signup-data.service';
   styleUrls: ['./personal.component.css']
 })
 export class PersonalComponent implements OnInit {
-  private title = 'Please tell about yourself';
-  private personal: Personal;
-  private form: any;
+  title = 'Please tell about yourself';
+  personal: Personal;
+  form: any;
   @Output()
-  private personalCompleted: EventEmitter<any> = new EventEmitter<any>();
+  personalCompleted: EventEmitter<any> = new EventEmitter<any>();
 
   constructor(private router: Router, private signupDataService: SignupDataService) { }
 

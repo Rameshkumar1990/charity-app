@@ -7,12 +7,12 @@ import { SignupDataService } from '../../service/signup-data.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  private formData;
-  private activeTab: String = 'user';
-  private completedForms: String[] = [];
-  private userCredentialsVisibility: boolean = true;
-  private personalVisibility: boolean = false;
-  private workVisibility: boolean = false;
+  formData;
+  activeTab: String = 'user';
+  completedForms: String[] = [];
+  userCredentialsVisibility: boolean = true;
+  personalVisibility: boolean = false;
+  workVisibility: boolean = false;
 
 
   constructor(private signupDataService: SignupDataService) { }

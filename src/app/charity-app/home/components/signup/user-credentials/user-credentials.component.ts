@@ -8,10 +8,10 @@ import { SignupDataService } from '../../../service/signup-data.service';
   styleUrls: ['./user-credentials.component.css']
 })
 export class UserCredentialsComponent implements OnInit {
-  private userCredentials: UserCredentials;
-  private form:any;
+  userCredentials: UserCredentials;
+  form:any;
   @Output()
-  private userCredentialsCompleted:EventEmitter<any> = new EventEmitter<any>();
+  userCredentialsCompleted:EventEmitter<any> = new EventEmitter<any>();
 
   constructor(private signupDataService:SignupDataService) {}
 

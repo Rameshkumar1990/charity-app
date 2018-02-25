@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: './about.component.html'
 })
 export class AboutComponent { 
-    private pageTitle:String = 'Somethings about us';
-    private pageDescription:String = 'Who are we, what are we?';
+    pageTitle:String = 'Somethings about us';
+    pageDescription:String = 'Who are we, what are we?';
 }

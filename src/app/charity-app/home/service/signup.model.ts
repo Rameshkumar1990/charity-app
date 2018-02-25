@@ -1,5 +1,5 @@
 export class SignupFormData {
-    private _userCredentials: UserCredentials = new UserCredentials();
+    _userCredentials: UserCredentials = new UserCredentials();
 
     firstName: string = '';
     lastName : string = '';
@@ -33,9 +33,9 @@ export class SignupFormData {
 }
 
 export class UserCredentials {
-    private userName: string = '';
-    private email: string = '';
-    private password: string = '';
+    userName: string = '';
+    email: string = '';
+    password: string = '';
 
     clear(){
         this.userName = '';

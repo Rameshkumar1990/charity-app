@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./causes.component.css']
 })
 export class CausesComponent implements OnInit {
-  private pageTitle:String = 'Our Causes';
-  private pageDescription:String = 'Together we can make a Difference';
+  pageTitle:String = 'Our Causes';
+  pageDescription:String = 'Together we can make a Difference';
 
   constructor() { }
 

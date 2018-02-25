@@ -10,11 +10,11 @@ import { SignupDataService } from '../../../service/signup-data.service';
 })
 export class WorkComponent implements OnInit {
 
-    private title = 'What do you do?';
-    private workType: string;
-    private form: any;
+    title = 'What do you do?';
+    workType: string;
+    form: any;
     @Output()
-    private workCompleted: EventEmitter<any> = new EventEmitter<any>();
+    workCompleted: EventEmitter<any> = new EventEmitter<any>();
 
     constructor(private router: Router, private signupDataService: SignupDataService) {
     }

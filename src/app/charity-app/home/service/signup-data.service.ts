@@ -5,11 +5,11 @@ import { SignupFormData, Personal, Address, UserCredentials } from './signup.mod
 @Injectable()
 export class SignupDataService {
 
-    private signupFormData: SignupFormData = new SignupFormData();
-    private isUserCredentialsFormValid: boolean = false;
-    private isPersonalFormValid: boolean = false;
-    private isWorkFormValid: boolean = false;
-    private isAddressFormValid: boolean = false;
+    signupFormData: SignupFormData = new SignupFormData();
+    isUserCredentialsFormValid: boolean = false;
+    isPersonalFormValid: boolean = false;
+    isWorkFormValid: boolean = false;
+    isAddressFormValid: boolean = false;
 
     getUserCredentials(): UserCredentials {
         return this.signupFormData.userCredentials;

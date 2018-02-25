@@ -8,9 +8,9 @@ import { ModalInfoComponent } from "../../../app-common/components/modal-info/mo
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
-  private firstName: String;
-  private email: String;
-  private message: String;
+  firstName: String;
+  email: String;
+  message: String;
 
   constructor(private dialogService: DialogService) { }
 
