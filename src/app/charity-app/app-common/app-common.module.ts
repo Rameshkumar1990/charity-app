@@ -8,6 +8,7 @@ import { HeaderContactComponent } from "./components/header/header-contact.compo
 import { HeaderMenuComponent } from "./components/header/header-menu.component";
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { ModalInfoComponent } from './components/modal-info/modal-info.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { ModalInfoComponent } from './components/modal-info/modal-info.component
         HeaderContactComponent,
         HeaderMenuComponent,
         PageHeaderComponent,
-        ModalInfoComponent
+        ModalInfoComponent,
+        FooterComponent
     ],
     imports: [
         CommonModule,
@@ -30,7 +32,8 @@ import { ModalInfoComponent } from './components/modal-info/modal-info.component
         HeaderContactComponent,
         HeaderMenuComponent,
         PageHeaderComponent,
-        ModalInfoComponent
+        ModalInfoComponent,
+        FooterComponent
     ]
 })
 export class AppCommonModule { }

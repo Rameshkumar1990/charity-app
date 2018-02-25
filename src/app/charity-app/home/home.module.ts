@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { AboutModule } from '../about/about.module';
 
 import { HomeComponent } from './components/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -26,7 +28,9 @@ import { UserCredentialsComponent } from './components/signup/user-credentials/u
     ],
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        AboutModule,
+        RouterModule
     ],
     providers: [
         SignupDataService

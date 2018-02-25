@@ -271,7 +271,8 @@ a:hover, a:focus, a:active {
 }
   
 .about-us-col {
-    height: 325px;
+    margin-bottom: 25px;
+    /*height: 250px;*/
     padding: 25px;
     text-align: center;
     background-color: #0076a3;
@@ -294,6 +295,19 @@ a:hover, a:focus, a:active {
     min-height: 80px;
 }
 
+.about-icon{
+    width: 80px;
+    height: 80px;
+    line-height: 85px;
+    display: inline-block;
+    border-radius: 100px;
+    color: #1386e5;
+    background: white;
+    z-index: 2;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+}
 /* Team 
 ================================= */
 .team-member {
@@ -316,7 +330,7 @@ a:hover, a:focus, a:active {
 /* Pages 
 ================================= */
 .page-heading {
-    background: url('assets/images/heading-bg.jpg') no-repeat center;
+    background: url('assets/images/Page-header-bw.jpg') no-repeat center;
     background-size: cover;
     min-height: 190px;
     color: #fff;
@@ -475,17 +489,8 @@ a:hover, a:focus, a:active {
         padding: 25px;
    }
 }
-/* Medium devices (desktops, 992px and Donw) */
+/* Medium devices (desktops, 992px and Down) */
 @media (max-width: 992px) {
-    .carousel-home .carousel-title {
-        font-size: 36px;
-   }
-    .carousel-home .carousel-subtitle {
-        font-size: 18px;
-   }
-    .carousel-home .btn {
-        margin-top: 15px;
-   }
     .about-us-col {
         margin-bottom: 25px;
    }
@@ -531,23 +536,7 @@ a:hover, a:focus, a:active {
         background: #115c9b;
         border-top-color: #1f76bd;
    }
-    .carousel-home .carousel-title {
-        font-size: 32px;
-   }
-    .carousel-home .carousel-subtitle {
-        font-size: 16px;
-   }
-    .carousel-home .carousel-control {
-        background: #1f76bd;
-        height: 40px;
-        width: 20px;
-        top: 50%;
-        margin-top: -20px;
-   }
-    .carousel-home .carousel-control .fa {
-        font-size: 1.5em;
-        padding-top: 4px;
-   }
+    
     .col-form {
         margin-bottom: 25px;
    }
@@ -561,17 +550,7 @@ a:hover, a:focus, a:active {
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
-    .carousel-home .carousel-title {
-        font-size: 16px;
-        margin: 0;
-   }
-    .carousel-home .carousel-subtitle {
-        font-size: 14px;
-        margin: 0;
-   }
-    .carousel-home .carousel-indicators {
-        bottom: 0;
-   }
+    
 }
 /* ============================================================================= Animations ========================================================================== */
 .animate-onscroll {
