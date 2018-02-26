@@ -5,7 +5,6 @@ import { AppCommonModule } from '../app-common/app-common.module';
 import { CausesComponent } from './components/causes.component';
 import { CausesListComponent } from './components/causes-list/causes-list.component';
 
-
 @NgModule({
     declarations: [
         CausesComponent,
