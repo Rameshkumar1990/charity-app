@@ -26,6 +26,14 @@ export class InMemoryDataService implements InMemoryDbService {
                 amountReceived: 0,
                 contact: '+919666611411',
                 imageurl: 'cause-education.jpg'
+            },
+            {   
+                name: 'Technology', 
+                description:"Our website is hosted in AWS that we have to pay for maintenance. This donation will help our website keep functioning.", 
+                amount:6000,
+                amountReceived: 0,
+                contact: '+919666611411',
+                imageurl: 'cause-rights.jpg'
             }
         ];
         return {needs};
