@@ -12,20 +12,28 @@ export class InMemoryDataService implements InMemoryDbService {
                 imageurl: 'cause-education.jpg'
             },
             {   
-                name: 'Baby', 
-                description:"A new born baby needs", 
-                amount:3000.0,
-                amountReceived: 2500,
-                contact: 'pavani.kalidindi@gmail.com',
-                imageurl: 'cause-hunger.jpg'
-            },
-            {   
                 name: 'Education', 
                 description:"A 5th grade kid needs to pay his school fees every month", 
                 amount:2500,
                 amountReceived: 0,
                 contact: '+919666611411',
                 imageurl: 'cause-education.jpg'
+            },
+            {   
+                name: 'Essentials', 
+                description:"Rama rao can sustain the winter better if he had more winter clothes", 
+                amount:6000,
+                amountReceived: 0,
+                contact: '+919666611411',
+                imageurl: 'cause-essentials-clothes.jpg'
+            },
+            {   
+                name: 'Senior', 
+                description:"Bhaskaran ji is nearing 70 and is single. A duty of any child is to not let their parents down. We can all be his children", 
+                amount:1000,
+                amountReceived: 0,
+                contact: '+919666611411',
+                imageurl: 'cause-seniors.jpg'
             },
             {   
                 name: 'Technology', 

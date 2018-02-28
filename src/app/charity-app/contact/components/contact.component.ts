@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: './contact.component.html'
 })
 export class ContactComponent { 
-    pageTitle:String = 'Wish to give hope?';
+    pageTitle:String = 'Want to be a part of us?';
     pageDescription:String = 'Here are few ways to get in touch with us';
 }
