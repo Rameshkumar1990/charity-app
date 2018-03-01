@@ -3,47 +3,43 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 export class InMemoryDataService implements InMemoryDbService {
     createDb() {
         const needs = [
-            { 
-                name: 'Education', 
-                description:"Cause for a kids education", 
-                amount:5000,
-                amountReceived:200,
-                contact: '+919000678051',
-                imageurl: 'cause-education.jpg'
+            {
+                name: 'Education',
+                description: "Education is the key to the progress of the society and the tool to make the world a better place.",
+                details: "There are a lot of children in our own neighbourhood who cannot go to school or pay their exam fees. You can help us find them. Our goal is to take over their financial burden and take care of their fees for atleast a year to the extent we can support them. We also provide them any guidance possible, meet and check with them frequently on their progress and make sure they continue to get a good education.",
+                amount: 5000,
+                amountReceived: 200,
+                contact: '+919666611411',
+                imageurl: 'cause-education.png'
             },
-            {   
-                name: 'Education', 
-                description:"A 5th grade kid needs to pay his school fees every month", 
-                amount:2500,
+            {
+                name: 'Senior',
+                description: "We grew holding their hands, now we want them to hold ours.",
+                details: "We take blessings always from elders, and give them what they need for a healthy life. They might have pensions or other funds, but we have seen that a small addition from us will make a lot a difference in their life standards. Their needs are not many, we support them lead their lives dignified, secure and healthy.",
+                amount: 1000,
                 amountReceived: 0,
                 contact: '+919666611411',
-                imageurl: 'cause-education.jpg'
+                imageurl: 'cause-senior.png'
             },
-            {   
-                name: 'Essentials', 
-                description:"Rama rao can sustain the winter better if he had more winter clothes", 
-                amount:6000,
+            {
+                name: 'Essentials',
+                description: "Everything is Something for some, Something is everything for some.",
+                details: "Not everyone is fortunate enough to meet even their day to day essential needs. We support them rebuid their lives. Anything like Clothes, utensils, applicances used or new could make a difference.",
+                amount: 6000,
                 amountReceived: 0,
                 contact: '+919666611411',
-                imageurl: 'cause-essentials-clothes.jpg'
+                imageurl: 'cause-essentials.png'
             },
-            {   
-                name: 'Senior', 
-                description:"Bhaskaran ji is nearing 70 and is single. A duty of any child is to not let their parents down. We can all be his children", 
-                amount:1000,
+            {
+                name: 'Make A Wish',
+                description: "The Joy of having a wish come true is limitless, the joy of fulfilling that wish is beyond that.",
+                details: "This is our dream and our Wish too. This is a voluntary event where we work with a school, orphanage or an oldage home, talk to them, collect a list all their small wishes and fulfill them. We, all the volunteers, meet them and spend sometime with them on a chosen day when we deliver the items we bought for them. These could be books, geometry boxes, new clothes, toys etc.",
+                amount: 6000,
                 amountReceived: 0,
                 contact: '+919666611411',
-                imageurl: 'cause-seniors.jpg'
-            },
-            {   
-                name: 'Technology', 
-                description:"Our website is hosted in AWS that we have to pay for maintenance. This donation will help our website keep functioning.", 
-                amount:6000,
-                amountReceived: 0,
-                contact: '+919666611411',
-                imageurl: 'cause-rights.jpg'
+                imageurl: 'cause-make-a-wish.png'
             }
         ];
-        return {needs};
+        return { needs };
     }
 }
