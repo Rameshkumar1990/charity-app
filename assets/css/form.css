@@ -7,6 +7,10 @@
   margin-bottom: 8px;
 }
 
+.carousel-content-shadow {
+  text-shadow: 1px 1px #000000;
+}
+
 /*.ng-valid[required], .ng-valid.required  {
   border-left: 5px solid #42A948;
 }
