@@ -1,7 +1,8 @@
 export class Need {
     name: string;
-    description: Text;
+    description: string;
     amount: number;
     amountReceived: number;
     contact: string;
+    details: string;
 }
