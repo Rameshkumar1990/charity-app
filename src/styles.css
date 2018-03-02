@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and" also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
+@import "~snazzy-info-window/dist/snazzy-info-window.css";
 /*@import "assets/css/riliwan-rabo.css";
 @import "assets/css/form.css";*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
@@ -385,7 +386,6 @@ a:hover, a:focus, a:active {
     display: block;
     margin-left: 50px;
     /* margin-top: -37px; */
-    margin-bottom: 70px;  
   } 
   
 /* =============================================================================
