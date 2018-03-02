@@ -27,7 +27,7 @@ export class CausesListComponent implements OnInit {
 
   donate(need : Need){
     this.dialogService.addDialog(ModalInfoComponent, {
-      title: 'Thank you',
+      title: need.name,
       // messageParaOne: 'Thanks for showing interest in donating for ' + need.name + ' cause.',
       messageParaTwo: need.details,
       messageParaThree: 'If you wish to contribute to this cause or if you know someone who can be benefitted by this cause, please contact us at ' + need.contact + '.'

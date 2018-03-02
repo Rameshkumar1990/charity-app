@@ -50,6 +50,8 @@ a:hover, a:focus, a:active {
     border-bottom: none !important;
     font-style: italic;
     padding-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .navbar-main a:hover, .navbar-main a:active, .navbar-main a:focus, .navbar-main a.is-active {
@@ -258,7 +260,7 @@ a:hover, a:focus, a:active {
     padding: 0 15px;
     font-size: 13px;
     margin-bottom: 15px;
-    min-height: 115px;
+    min-height: 75px;
   }
   .cause:hover {
     background: #f0f0f0;
@@ -355,7 +357,7 @@ a:hover, a:focus, a:active {
 ================================= */
 
 
-.contact-items {
+  .contact-items {
     margin-top: 30px;
   }
   .contact-items .contact-item {
@@ -378,8 +380,14 @@ a:hover, a:focus, a:active {
     font-size: 20px;
     margin-top: 7px;
   }
-    
 
+  .contact-address {
+    display: block;
+    margin-left: 50px;
+    /* margin-top: -37px; */
+    margin-bottom: 70px;  
+  } 
+  
 /* =============================================================================
 	Module
 ========================================================================== */
@@ -525,6 +533,8 @@ a:hover, a:focus, a:active {
    }
     .navbar-main .navbar-brand {
         padding: 15px 15px;
+        font-size: 19px;
+        font-weight: bold;
    }
     .navbar-main .submenu {
         position: initial;
@@ -548,6 +558,10 @@ a:hover, a:focus, a:active {
    .signup-wrapper{
     width: 350px;
     margin: 0 auto;
+    }
+
+    .contact-address {
+        margin-bottom: 15px;
     }
 }
 /* Extra Small devices (tablets, 480px and Down) */

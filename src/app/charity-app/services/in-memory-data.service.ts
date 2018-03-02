@@ -15,7 +15,7 @@ export class InMemoryDataService implements InMemoryDbService {
             {
                 name: 'Senior',
                 description: "We grew holding their hands, now we want them to hold ours.",
-                details: "We take blessings always from elders, and give them what they need for a healthy life. They might have pensions or other funds, but we have seen that a small addition from us will make a lot a difference in their life standards. Their needs are not many, we support them lead their lives dignified, secure and healthy.",
+                details: "Everyone deserves a dignified life and we do not let our elders down. Some have support from their family while some don't. Some do not even have a family. They may might still get pensions or other funds, but we have seen that a small addition from us will make a lot a difference in their life standards. Their needs are not many, we support them lead their lives dignified, secure and healthy.",
                 amount: 1000,
                 amountReceived: 0,
                 contact: '+919666611411',
