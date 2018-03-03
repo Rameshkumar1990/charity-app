@@ -9,8 +9,8 @@ import { AgmMap } from '@agm/core';
 export class ContactComponent {
     pageTitle: String = 'Want to be a part of us?';
     pageDescription: String = 'Here are few ways to get in touch with us';
-    lat: number = 17.482993;
-    lng: number = 78.370642;
+    lat: number = 17.48918337;
+    lng: number = 78.37219792;
     zoom: number = 15;
 
     @ViewChild(AgmMap) myMap: any;
